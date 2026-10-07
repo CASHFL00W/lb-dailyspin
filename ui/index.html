@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Daily Spins</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark">
+    <div id="app" class="app">
+        <header class="top">
+            <div class="title-row">
+                <div>
+                    <p class="eyebrow" data-i18n="subtitle">Your daily shot at luck</p>
+                    <h1>Daily Spins</h1>
+                </div>
+                <button id="soundBtn" class="icon-btn" aria-label="Sound"></button>
+            </div>
+            <nav class="segmented" id="tabs">
+                <span class="seg-thumb"></span>
+                <button data-tab="spin" class="active" data-i18n="tab_spin">Spin</button>
+                <button data-tab="mission"><span data-i18n="tab_mission">Mission</span><i class="badge-dot"></i></button>
+                <button data-tab="history" data-i18n="tab_history">History</button>
+            </nav>
+        </header>
+
+        <main class="views">
+            <!-- Wheel -->
+            <section class="view active" id="view-spin">
+                <div class="wheel-stage" id="wheelStage">
+                    <div class="wheel-glow"></div>
+                    <div class="pointer" id="pointer">
+                        <svg viewBox="0 0 40 48"><path d="M20 46 4.5 14A16 16 0 1 1 35.5 14z"/><circle cx="20" cy="17" r="6"/></svg>
+                    </div>
+                    <svg id="wheel" class="wheel" viewBox="0 0 300 300" aria-hidden="true"></svg>
+                    <button id="spinBtn" class="hub" disabled>
+                        <span class="hub-label" id="hubLabel">SPIN</span>
+                    </button>
+                </div>
+
+                <div class="card status" id="statusCard">
+                    <div class="status-icon" id="statusIcon"></div>
+                    <div class="status-text">
+                        <span class="status-caption" id="statusCaption"></span>
+                        <span class="status-value" id="statusValue"></span>
+                    </div>
+                </div>
+
+                <button class="chip-btn" id="chancesBtn" hidden>
+                    <span class="ico" data-icon="info"></span><span data-i18n="chances">Odds</span>
+                </button>
+            </section>
+
+            <!-- Mission -->
+            <section class="view" id="view-mission">
+                <div id="missionContent"></div>
+            </section>
+
+            <!-- History -->
+            <section class="view" id="view-history">
+                <div class="stats">
+                    <div class="stat"><span class="stat-value" id="statSpins">0</span><span class="stat-label" data-i18n="stats_spins">Spins</span></div>
+                    <div class="stat"><span class="stat-value" id="statEarned">$0</span><span class="stat-label" data-i18n="stats_earned">Earned</span></div>
+                    <div class="stat"><span class="stat-value" id="statMissions">0</span><span class="stat-label" data-i18n="stats_missions">Missions</span></div>
+                </div>
+                <div class="card list" id="historyList"></div>
+            </section>
+        </main>
+
+        <div class="sheet-backdrop" id="sheetBackdrop">
+            <div class="sheet" id="sheet"></div>
+        </div>
+        <div class="toast" id="toast"></div>
+        <canvas id="confetti"></canvas>
+    </div>
+
+    <script src="sounds.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

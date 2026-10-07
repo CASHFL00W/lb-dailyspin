@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff375f"/>
+      <stop offset="1" stop-color="#ff9f0a"/>
+    </linearGradient>
+    <radialGradient id="shine" cx="0.3" cy="0.2" r="0.9">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.35"/>
+      <stop offset="0.6" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="512" height="512" fill="url(#bg)"/>
+  <rect width="512" height="512" fill="url(#shine)"/>
+  <g transform="translate(256 276)">
+    <circle r="168" fill="#1c1c1e" opacity="0.18" transform="translate(0 10)"/>
+    <circle r="162" fill="#ffffff"/>
+    <g>
+      <path d="M0 0 L0 -146 A146 146 0 0 1 103.2 -103.2 Z" fill="#ff375f"/>
+      <path d="M0 0 L103.2 -103.2 A146 146 0 0 1 146 0 Z" fill="#ffd60a"/>
+      <path d="M0 0 L146 0 A146 146 0 0 1 103.2 103.2 Z" fill="#30d158"/>
+      <path d="M0 0 L103.2 103.2 A146 146 0 0 1 0 146 Z" fill="#64d2ff"/>
+      <path d="M0 0 L0 146 A146 146 0 0 1 -103.2 103.2 Z" fill="#bf5af2"/>
+      <path d="M0 0 L-103.2 103.2 A146 146 0 0 1 -146 0 Z" fill="#ff9f0a"/>
+      <path d="M0 0 L-146 0 A146 146 0 0 1 -103.2 -103.2 Z" fill="#0a84ff"/>
+      <path d="M0 0 L-103.2 -103.2 A146 146 0 0 1 0 -146 Z" fill="#48484a"/>
+    </g>
+    <circle r="44" fill="#ffffff"/>
+    <circle r="30" fill="url(#bg)"/>
+  </g>
+  <path d="M256 150 L226 96 A34 34 0 1 1 286 96 Z" fill="#ffffff" stroke="#1c1c1e" stroke-opacity="0.12" stroke-width="4"/>
+  <circle cx="256" cy="82" r="12" fill="#ff375f"/>
+</svg>

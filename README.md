@@ -125,18 +125,6 @@ The app is only a remote control. Everything that matters is decided and checked
 
 ---
 
-## Preview / screenshots
-
-The UI has a demo mode. Open `ui/index.html` directly in a browser and it runs with sample data:
-
-```
-ui/index.html?view=spin|mission|history&theme=light|dark&result=jackpot|cash|mission|empty&cooldown=1
-```
-
-`docs/showcase.html` arranges several of these views in phone frames. It's what the images in this README were made from.
-
----
-
 ## Credits & license
 
 Made by **CASH**. Released for free under the [MIT License](LICENSE), so you can use it, change it and share it. A credit is appreciated but not required. Please don't resell it.
